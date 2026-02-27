@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>VISTA-MOL - Interactive VSEPR Molecular Learning</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h1>🧪 VISTA-MOL</h1>
+<h3>Visualization Interactive System for Molecular Learning</h3>
+
+<select onchange="loadMol(this.value)">
+
+<option value="">Pilih Bentuk Molekul</option>
+
+<option value="BeCl2">AX2 - Linier (BeCl2)</option>
+<option value="BF3">AX3 - Trigonal Datar (BF3)</option>
+<option value="SO2">AX2E - Bengkok (SO2)</option>
+<option value="CH4">AX4 - Tetrahedron (CH4)</option>
+<option value="NH3">AX3E - Piramida Trigonal (NH3)</option>
+<option value="H2O">AX2E2 - Bengkok (H2O)</option>
+<option value="PCl5">AX5 - Bipiramida Trigonal (PCl5)</option>
+<option value="SF4">AX4E - Seesaw (SF4)</option>
+<option value="ClF3">AX3E2 - Bentuk T (ClF3)</option>
+<option value="XeF2">AX2E3 - Linier (XeF2)</option>
+<option value="SF6">AX6 - Oktahedron (SF6)</option>
+<option value="BrF5">AX5E - Piramida Segi Empat (BrF5)</option>
+<option value="XeF4">AX4E2 - Segi Empat Planar (XeF4)</option>
+
+</select>
+
+<div id="info"></div>
+
+<button onclick="openMol()">🔬 Lihat Molekul 3D</button>
+
+<h2>Kuis Cepat</h2>
+
+<p>Bentuk molekul CH4 adalah...</p>
+
+<button onclick="cek('A')">Linear</button>
+<button onclick="cek('B')">Tetrahedral</button>
+<button onclick="cek('C')">Bengkok</button>
+
+<p id="hasil"></p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
